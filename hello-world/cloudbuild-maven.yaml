@@ -1,0 +1,9 @@
+steps:
+  # 部署 
+  - name: 'maven'
+    entrypoint: 'mvn'
+    id: 'maven-deploy'
+    args:
+      - 'deploy'
+      - '-f'
+      - './hello-world/pom.xml'      
